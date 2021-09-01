@@ -1,0 +1,209 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.bodydiv1{
+    padding: 50px;
+    display: flex;
+    row-gap: 50px;
+    align-items: center;
+    flex-direction: column;
+    background-color:  rgb(231, 231, 231);
+}
+.infodiv1{
+    width: 70vw;
+    display: flex;
+    padding: 3px 0;
+    row-gap: 5px;
+    flex-direction: column;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 5px;
+}
+.headingdiv1{
+    height: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    width: 100%;
+}
+.contentdiv1{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    column-gap: 5px;
+    flex-direction: row;
+}
+.imagediv1{
+    width: 20%;
+    position: relative;
+    height: 100%;
+    background-color: rgb(219, 217, 217);
+    padding: 5px;
+}
+
+.textdiv1{
+    width: 80%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(90, 88, 88);
+    position: relative;
+}
+.skeleton-text{
+    width: 80%;
+    border-radius: 2px;
+    height: 10%;
+    background-color: rgb(219, 217, 217);
+}
+.skeleton-text1{
+    width: 85%;
+    border-radius: 2px;
+    height: 20%;
+    background-color: rgb(219, 217, 217);
+}
+.hoverclass{
+    position: absolute;
+    width: .4vh;
+    height: 100%;
+    top: 0;
+    border-radius: 2px;
+    left: 0;
+    background-color:rgb(255, 255, 255);
+    animation: animatorskeleton .9s infinite linear;
+}
+.hoverclass1{
+    position: absolute;
+    width: .4vh;
+    height: 100%;
+    top: 0;
+    border-radius: 2px;
+    left: 0;
+    background-color:rgb(255, 255, 255);
+    animation: animatorskeleton1 .8s infinite linear;
+}
+@keyframes animatorskeleton {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(69vw);
+    }
+}
+@keyframes animatorskeleton1 {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(50vw);
+    }
+}
+@media screen and (max-width:1000px){
+    .skeleton-text{
+        width: 80%;
+        border-radius: 2px;
+        height: 10%;
+        background-color: rgb(219, 217, 217);
+    }
+    .skeleton-text1{
+        width: 85%;
+        border-radius: 2px;
+        height: 20%;
+        background-color: rgb(219, 217, 217);
+    }
+}
+
+@media screen and (max-width:700px) {
+    .bodydiv1{
+        padding: 30px;
+        row-gap: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .headingdiv1{
+        height: 50px;
+        font-size: 1rem;
+        padding: 1px;
+        overflow:hidden ;
+        text-align: center;
+        width: 100%;
+    }
+    .textdiv1{
+        width: 70%;
+        height: 100%;
+        padding: 5px;
+        font-size: .8rem;
+        overflow-wrap: break-word;
+        overflow-y: hidden;
+        color: rgb(90, 88, 88);
+        position: relative;
+    }
+    .skeleton-text{
+        width: 80%;
+        border-radius: 2px;
+        height: 6%;
+        background-color: rgb(219, 217, 217);
+    }
+    .skeleton-text1{
+        width: 85%;
+        border-radius: 2px;
+        height: 20%;
+        background-color: rgb(219, 217, 217);
+    }
+    .imagediv1{
+        width: 30%;
+        position: relative;
+        height: 80%;
+        background-color: rgb(219, 217, 217);
+        padding: 5px;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:400px) {
+    .bodydiv1{
+        padding: 20px;
+        row-gap: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .headingdiv1{
+        height: 35px;
+        font-size: 1rem;
+        padding: 1px;
+        overflow:hidden ;
+        text-align: center;
+        width: 100%;
+    }
+    .contentdiv1{
+        height: 110px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .skeleton-text{
+        width: 80%;
+        border-radius: 2px;
+        height: 4%;
+        background-color: rgb(219, 217, 217);
+    }
+    .skeleton-text1{
+        width: 85%;
+        border-radius: 2px;
+        height: 15%;
+        background-color: rgb(219, 217, 217);
+    }
+    .imagediv1{
+        width: 30%;
+        position: relative;
+        height: 80%;
+        background-color: rgb(219, 217, 217);
+        padding: 5px;
+        margin-top: 10px;
+    }
+}
