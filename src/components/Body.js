@@ -6,6 +6,7 @@ var data = fetchData()
 
 
 export default function Bodybasket(){
+    console.log(fetchData());
     const [info] = useState(data.user.read().arts)
     return (
         <div className="bodydiv">
